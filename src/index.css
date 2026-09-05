@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+body {
+  background-color: #faf5f8;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(254, 205, 230, 0.35) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(186, 230, 253, 0.45) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(252, 231, 243, 0.4) 0px, transparent 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+/* Custom soft scrollbar with pink-to-skyblue gradient thumb */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(244, 114, 182, 0.4), rgba(56, 189, 248, 0.4));
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(244, 114, 182, 0.7), rgba(56, 189, 248, 0.7));
+}
+
+/* Glassmorphism card utility */
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(244, 114, 182, 0.18);
+  box-shadow: 0 10px 30px -10px rgba(244, 114, 182, 0.08), 0 4px 12px -2px rgba(56, 189, 248, 0.05);
+}
+
+.glass-card:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 16px 35px -10px rgba(244, 114, 182, 0.15), 0 6px 16px -2px rgba(56, 189, 248, 0.12);
+}
+
+/* Custom Gradients */
+.gradient-pink-sky {
+  background: linear-gradient(135deg, #FDF2F8 0%, #F0F9FF 100%);
+}
+
+.gradient-sky-pink {
+  background: linear-gradient(135deg, #E0F2FE 0%, #FCE7F3 100%);
+}
+
+.gradient-card-pink {
+  background: linear-gradient(135deg, #FFF0F5 0%, #FFFFFF 100%);
+}
+
+.gradient-card-sky {
+  background: linear-gradient(135deg, #F0F9FF 0%, #FFFFFF 100%);
+}
+
+.gradient-button-pink-sky {
+  background: linear-gradient(135deg, #ec4899 0%, #38bdf8 100%);
+}
+
+.shadow-pink-glow {
+  box-shadow: 0 8px 25px -5px rgba(244, 114, 182, 0.35);
+}
+
+.shadow-sky-glow {
+  box-shadow: 0 8px 25px -5px rgba(56, 189, 248, 0.35);
+}
+
+/* Keyframe Animations */
+@keyframes pulse-ring {
+  0% { transform: scale(0.96); opacity: 0.85; }
+  50% { transform: scale(1.04); opacity: 1; }
+  100% { transform: scale(0.96); opacity: 0.85; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes float-slow {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes glow-pulse {
+  0% { box-shadow: 0 0 15px rgba(244, 114, 182, 0.2); }
+  50% { box-shadow: 0 0 25px rgba(56, 189, 248, 0.4); }
+  100% { box-shadow: 0 0 15px rgba(244, 114, 182, 0.2); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-ring 4s infinite ease-in-out;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow-pulse 3s infinite ease-in-out;
+}
+
+.shimmer-badge {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2.5s infinite;
+}

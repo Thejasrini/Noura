@@ -1,0 +1,18 @@
+{
+  "name": "Noura Wellness Companion",
+  "short_name": "Noura",
+  "description": "Understand your body. Personal cycle, food, fitness, and wellness companion.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF5F8",
+  "theme_color": "#EC4899",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

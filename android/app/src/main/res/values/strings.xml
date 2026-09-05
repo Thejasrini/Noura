@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Noura</string>
+    <string name="title_activity_main">Noura</string>
+    <string name="package_name">com.noura.wellness</string>
+    <string name="custom_url_scheme">com.noura.wellness</string>
+</resources>
